@@ -100,7 +100,7 @@ class StrapiApp {
   configurations = {
     authLogo: Logo,
     head: { favicon: '' },
-    locales: ['en'],
+    locales: ['zh-Hans'],
     menuLogo: Logo,
     notifications: { releases: true },
     themes: { light: lightTheme, dark: darkTheme },
@@ -251,8 +251,8 @@ class StrapiApp {
   createCustomConfigurations = (customConfig: NonNullable<StrapiAppConstructorArgs['config']>) => {
     if (customConfig.locales) {
       this.configurations.locales = [
-        'en',
-        ...(customConfig.locales?.filter((loc) => loc !== 'en') || []),
+        'zh-Hans',
+        ...(customConfig.locales?.filter((loc) => loc !== 'zh-Hans') || []),
       ];
     }
 
@@ -434,7 +434,7 @@ class StrapiApp {
   render() {
     const localeNames = pick(languageNativeNames, this.configurations.locales || []);
     const locale = (localStorage.getItem(LANGUAGE_LOCAL_STORAGE_KEY) ||
-      'en') as keyof typeof localeNames;
+      'zh-Hans') as keyof typeof localeNames;
 
     this.store = configureStore(
       {
@@ -445,7 +445,7 @@ class StrapiApp {
             currentTheme: (localStorage.getItem(THEME_LOCAL_STORAGE_KEY) || 'system') as ThemeName,
           },
           language: {
-            locale: localeNames[locale] ? locale : 'en',
+            locale: localeNames[locale] ? locale : 'zh-Hans',
             localeNames,
           },
           token: getStoredToken(),
