@@ -124,7 +124,7 @@ const REGISTER_ADMIN_SCHEMA = yup.object().shape({
   confirmPassword: yup
     .string()
     .required({
-      id: translatedErrors.required,
+      id: translatedErrors.required.id,
       defaultMessage: 'Confirm password is required',
     })
     .nullable()
@@ -438,36 +438,36 @@ const Register = ({ hasAdmin }: RegisterProps) => {
                   size: 12,
                   type: 'password' as const,
                 },
-                {
-                  label: formatMessage(
-                    {
-                      id: 'Auth.form.register.news.label',
-                      defaultMessage:
-                        'Keep me updated about new features & upcoming improvements (by doing this you accept the {terms} and the {policy}).',
-                    },
-                    {
-                      terms: (
-                        <A target="_blank" href="https://strapi.io/terms" rel="noreferrer">
-                          {formatMessage({
-                            id: 'Auth.privacy-policy-agreement.terms',
-                            defaultMessage: 'terms',
-                          })}
-                        </A>
-                      ),
-                      policy: (
-                        <A target="_blank" href="https://strapi.io/privacy" rel="noreferrer">
-                          {formatMessage({
-                            id: 'Auth.privacy-policy-agreement.policy',
-                            defaultMessage: 'policy',
-                          })}
-                        </A>
-                      ),
-                    }
-                  ),
-                  name: 'news',
-                  size: 12,
-                  type: 'checkbox' as const,
-                },
+                // {
+                //   label: formatMessage(
+                //     {
+                //       id: 'Auth.form.register.news.label',
+                //       defaultMessage:
+                //         'Keep me updated about new features & upcoming improvements (by doing this you accept the {terms} and the {policy}).',
+                //     },
+                //     {
+                //       terms: (
+                //         <A target="_blank" href="https://strapi.io/terms" rel="noreferrer">
+                //           {formatMessage({
+                //             id: 'Auth.privacy-policy-agreement.terms',
+                //             defaultMessage: 'terms',
+                //           })}
+                //         </A>
+                //       ),
+                //       policy: (
+                //         <A target="_blank" href="https://strapi.io/privacy" rel="noreferrer">
+                //           {formatMessage({
+                //             id: 'Auth.privacy-policy-agreement.policy',
+                //             defaultMessage: 'policy',
+                //           })}
+                //         </A>
+                //       ),
+                //     }
+                //   ),
+                //   name: 'news',
+                //   size: 12,
+                //   type: 'checkbox' as const,
+                // },
               ].map(({ size, ...field }) => (
                 <Grid.Item key={field.name} col={size} direction="column" alignItems="stretch">
                   <InputRenderer {...field} />
