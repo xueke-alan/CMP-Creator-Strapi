@@ -33,6 +33,7 @@ const PasswordInput = forwardRef<HTMLInputElement, StringProps>(
               onClick={() => {
                 setShowPassword((prev) => !prev);
               }}
+              tabIndex={-1}
             >
               {showPassword ? <Eye fill="neutral500" /> : <EyeStriked fill="neutral500" />}
             </Field.Action>
