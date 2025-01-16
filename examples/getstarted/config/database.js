@@ -20,11 +20,11 @@ const postgres = {
 const mysql = {
   client: 'mysql',
   connection: {
-    database: 'strapi',
-    user: 'strapi',
-    password: 'strapi',
+    database: 'homepage',
+    user: 'admin',
+    password: 'Xk990704',
     port: 3306,
-    host: 'localhost',
+    host: '122.152.236.195',
   },
 };
 
