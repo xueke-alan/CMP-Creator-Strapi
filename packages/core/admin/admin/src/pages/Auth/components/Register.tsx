@@ -15,7 +15,6 @@ import {
 import { Form, FormHelpers } from '../../../components/Form';
 import { InputRenderer } from '../../../components/FormInputs/Renderer';
 import { useGuidedTour } from '../../../components/GuidedTour/Provider';
-import { useNpsSurveySettings } from '../../../components/NpsSurvey';
 import { Logo } from '../../../components/UnauthenticatedLogo';
 import { useTypedDispatch } from '../../../core/store/hooks';
 import { useNotification } from '../../../features/Notifications';
@@ -179,7 +178,6 @@ const Register = ({ hasAdmin }: RegisterProps) => {
     _unstableFormatAPIError: formatAPIError,
     _unstableFormatValidationErrors: formatValidationErrors,
   } = useAPIErrorHandler();
-  const { setNpsSurveySettings } = useNpsSurveySettings();
 
   const registrationToken = query.get('registrationToken');
 
@@ -229,7 +227,6 @@ const Register = ({ hasAdmin }: RegisterProps) => {
 
       if (news) {
         // Only enable EE survey if user accepted the newsletter
-        setNpsSurveySettings((s) => ({ ...s, enabled: true }));
 
         navigate({
           pathname: '/usecase',
@@ -263,7 +260,6 @@ const Register = ({ hasAdmin }: RegisterProps) => {
 
       if (news) {
         // Only enable EE survey if user accepted the newsletter
-        setNpsSurveySettings((s) => ({ ...s, enabled: true }));
 
         navigate({
           pathname: '/usecase',

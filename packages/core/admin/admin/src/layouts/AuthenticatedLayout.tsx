@@ -12,7 +12,6 @@ import packageJSON from '../../../package.json';
 import { GuidedTourModal } from '../components/GuidedTour/Modal';
 import { useGuidedTour } from '../components/GuidedTour/Provider';
 import { LeftMenu } from '../components/LeftMenu';
-import { NpsSurvey } from '../components/NpsSurvey';
 import { Onboarding } from '../components/Onboarding';
 import { Page } from '../components/PageHelpers';
 import { PluginsInitializer } from '../components/PluginsInitializer';
@@ -117,7 +116,6 @@ const AdminLayout = () => {
       latestStrapiReleaseTag={tagName}
       shouldUpdateStrapi={checkLatestStrapiVersion(strapiVersion, tagName)}
     >
-      <NpsSurvey />
       <PluginsInitializer>
         <DndProvider backend={HTML5Backend}>
           <Box background="neutral100">
