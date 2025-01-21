@@ -1,0 +1,47 @@
+# path: ./Dockerfile.prod
+
+FROM node:18-alpine AS base
+# Installing libvips-dev for sharp Compatibility
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev > /dev/null 2>&1
+
+# 设置环境变量
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+
+# 设置工作目录
+WORKDIR /opt/app
+
+# 复制依赖文件
+COPY ./package.json ./package-lock.json ./
+RUN npm install --production
+
+# 生产镜像阶段
+FROM node:18-alpine
+# Installing libvips-dev for sharp Compatibility
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update && apk add vips-dev
+RUN rm -rf /var/cache/apk/*
+
+# 设置环境变量
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+
+# 设置工作目录
+WORKDIR /opt/app
+
+# 复制依赖
+COPY --from=base /opt/app/node_modules ./node_modules
+ENV PATH /opt/app/node_modules/.bin:$PATH
+
+# 复制现有的 build 文件夹、config 文件夹和 package.json
+COPY ./build ./build
+COPY ./public ./public
+COPY ./src ./src
+COPY ./config ./config
+COPY ./package.json ./
+COPY ./.env ./
+
+# 暴露端口
+EXPOSE 1337
+
+# 启动命令
+CMD ["npm", "run", "start"]
