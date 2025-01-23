@@ -20,8 +20,8 @@ const getInitLocale = () => {
   }
 
   return {
-    code: 'en',
-    name: 'English (en)',
+    code: 'zh-Hans',
+    name: 'Chinese (Simplified) (zh-Hans)',
   };
 };
 

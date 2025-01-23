@@ -671,6 +671,7 @@
   "global.settings": "设置",
   "global.type": "类型",
   "global.users": "用户",
+  "global.localeToggle.label":"选择你的语言",
   "light": "浅色",
   "notification.contentType.relations.conflict": "内容类型存在冲突关系",
   "notification.default.title": "信息:",
