@@ -25,9 +25,7 @@ const dbConfig = {
       port: parseInt(process.env.DATABASE_PORT, 10) || 3306,
       host: process.env.DATABASE_HOST || 'localhost',
     },
-    settings: {
-      forceMigration: false, // 确保未启用
-    },
+
   },
   mariadb: {
     client: 'mysql',
@@ -43,10 +41,5 @@ const dbConfig = {
 
 module.exports = {
   connection: process.env.DB ? dbConfig[process.env.DB] || dbConfig.sqlite : dbConfig.sqlite,
-  useNullAsDefault: true,
-  options: {
-    migration: {
-      strategy: 'safe', // 使用 safe 避免清空表数据
-    },
-  },
+
 };

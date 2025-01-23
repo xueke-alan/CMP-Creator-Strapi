@@ -125,8 +125,8 @@ const FieldPicker = ({ headers = [], resetHeaders, setHeaders }: FieldPickerProp
       alignItems="stretch"
       gap={3}
       borderWidth={0}
-      maxHeight={'240px'}
-      overflow={'scroll'}
+      maxHeight={'220px'}
+      overflow={'hidden scroll'}
     >
       <Flex justifyContent="space-between">
         <Typography tag="legend" variant="pi" fontWeight="bold">
@@ -144,7 +144,7 @@ const FieldPicker = ({ headers = [], resetHeaders, setHeaders }: FieldPickerProp
         </TextButton>
       </Flex>
 
-      <Flex direction="column" alignItems="stretch">
+      <Flex direction="column" alignItems="stretch" gap={2} width="120px">
         {columns.map((header) => {
           const isActive = headers.includes(header.name);
 

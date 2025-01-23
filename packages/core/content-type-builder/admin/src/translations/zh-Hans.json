@@ -86,6 +86,9 @@
   "form.attribute.media.option.single": "单一的媒体",
   "form.attribute.media.option.single.description": "最适合的头像，个人资料图片或封面",
   "form.attribute.settings.default": "默认值",
+  "form.attribute.item.text.regex": "正则表达模式",
+  "form.attribute.item.text.regex.description": "正则表达文本",
+  "form.button.add.field.to.collectionType": "为此集合类型添加一个新字段",
   "form.attribute.text.option.long-text": "较长的文字",
   "form.attribute.text.option.long-text.description": "最适合的描述，传记。 精确搜索已禁用。",
   "form.attribute.text.option.short-text": "较短的文字",
