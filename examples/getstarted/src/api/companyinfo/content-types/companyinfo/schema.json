@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "companyinfos",
+  "info": {
+    "singularName": "companyinfo",
+    "pluralName": "companyinfos",
+    "displayName": "公司信息",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_CN": {
+      "type": "text"
+    },
+    "name_EN": {
+      "type": "text"
+    },
+    "LOGO": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "welcome_CN": {
+      "type": "text"
+    },
+    "welcome_EN": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "address_link": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address_coordinate": {
+      "type": "string"
+    },
+    "subSites": {
+      "displayName": "Media-url",
+      "type": "component",
+      "repeatable": true,
+      "component": "media-url.media-url"
+    }
+  }
+}

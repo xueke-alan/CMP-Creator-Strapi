@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salesmen",
+  "info": {
+    "singularName": "salesman",
+    "pluralName": "salesmen",
+    "displayName": "销售代表",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "WeChat": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

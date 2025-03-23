@@ -4,7 +4,7 @@
 
 const PLUGINS_META_MOCK_DATA = {
   collections: {
-    'Made by official partners': 9,
+    'Made by official cooperativeBrands': 9,
     'Made by Strapi': 13,
     'Made by the community': 69,
     Verified: 29,
@@ -657,7 +657,7 @@ const PLUGINS_MOCK_DATA = {
           madeByStrapi: false,
           strapiCompatibility: 'v4',
           submissionDate: '2022-09-28T13:43:56.000Z',
-          collections: ['Made by official partners'],
+          collections: ['Made by official cooperativeBrands'],
           categories: ['Custom fields'],
           strapiVersion: '^4.4.0',
         },
@@ -847,7 +847,7 @@ const PLUGINS_MOCK_DATA = {
 
 const PROVIDERS_META_MOCK_DATA = {
   collections: {
-    'Made by official partners': 0,
+    'Made by official cooperativeBrands': 0,
     'Made by Strapi': 6,
     'Made by the community': 2,
     Verified: 6,

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plasticsinfo",
+  "info": {
+    "singularName": "plasticinfo",
+    "pluralName": "plasticsinfo",
+    "displayName": "塑料信息",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plastic_info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "plastic-info.plastic-info"
+    },
+    "name_local": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_abbr": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

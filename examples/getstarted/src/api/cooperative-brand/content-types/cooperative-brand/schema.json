@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cooperative_brands",
+  "info": {
+    "singularName": "cooperative-brand",
+    "pluralName": "cooperative-brands",
+    "displayName": "合作品牌",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

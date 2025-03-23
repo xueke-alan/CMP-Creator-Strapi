@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "轮播图"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "medie-item.introduce-pics"
+    }
+  }
+}
