@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_key_value_key_values",
+  "info": {
+    "displayName": "键值对",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

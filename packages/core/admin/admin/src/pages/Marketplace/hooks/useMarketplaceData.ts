@@ -21,7 +21,7 @@ type Collections =
   | 'Verified'
   | 'Made by the community'
   | 'Made by Strapi'
-  | 'Made by official partners';
+  | 'Made by official cooperativeBrands';
 
 type Categories = 'Custom fields' | 'Deployment' | 'Monitoring';
 

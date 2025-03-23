@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_media_type_",
+  "info": {
+    "displayName": "媒体",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

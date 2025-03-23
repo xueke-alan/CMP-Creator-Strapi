@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "appkeys",
+  "info": {
+    "singularName": "appkey",
+    "pluralName": "appkeys",
+    "displayName": "appkey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "GaoDeMapKey": {
+      "type": "text"
+    }
+  }
+}

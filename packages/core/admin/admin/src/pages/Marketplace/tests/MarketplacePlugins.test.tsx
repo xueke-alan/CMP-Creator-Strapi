@@ -115,7 +115,7 @@ describe('Marketplace page - plugins tab', () => {
     await user.click(getByRole('combobox', { name: 'Collections' }));
 
     [
-      'Made by official partners (9)',
+      'Made by official cooperativeBrands (9)',
       'Made by Strapi (13)',
       'Made by the community (69)',
       'Verified (29)',

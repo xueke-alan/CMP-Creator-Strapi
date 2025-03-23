@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "产品",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "plastictype": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::plasticinfo.plasticinfo"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "minimum_order": {
+      "type": "string"
+    },
+    "inventory": {
+      "type": "decimal"
+    },
+    "code": {
+      "type": "string"
+    },
+    "specification": {
+      "type": "string"
+    },
+    "is_imported": {
+      "type": "boolean"
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "other_info": {
+      "displayName": "key_value",
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "media_product": {
+      "displayName": "introduce_pics",
+      "type": "component",
+      "repeatable": false,
+      "component": "medie-item.introduce-pics"
+    },
+    "shipping_address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "media_description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "medie-item.introduce-pics"
+    }
+  }
+}

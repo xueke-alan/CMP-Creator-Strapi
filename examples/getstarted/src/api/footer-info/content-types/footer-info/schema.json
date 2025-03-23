@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_infos",
+  "info": {
+    "singularName": "footer-info",
+    "pluralName": "footer-infos",
+    "displayName": "底部信息",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ICP": {
+      "type": "string"
+    },
+    "police": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "Friendship_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "sidePics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "medie-item.introduce-pics"
+    }
+  }
+}

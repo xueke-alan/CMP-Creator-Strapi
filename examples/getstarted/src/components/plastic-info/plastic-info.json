@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_plastic_info_plastic_infos",
+  "info": {
+    "displayName": "塑料信息",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type_name": {
+      "type": "enumeration",
+      "enum": [
+        "通用塑料",
+        "工程塑料",
+        "特种塑料",
+        "生物降解塑料",
+        "热塑性弹性体"
+      ],
+      "required": true,
+      "default": "工程塑料"
+    },
+    "discrimination": {
+      "type": "text"
+    },
+    "PhysicalProperties": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "ChemicalProperties": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "MechanicalProperties": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "ElectricalProperties": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    },
+    "ApplicationFields": {
+      "type": "text"
+    }
+  }
+}

@@ -130,7 +130,7 @@ describe('Marketplace page - providers tab', () => {
     await user.click(collectionsButton);
 
     [
-      'Made by official partners (0)',
+      'Made by official cooperativeBrands (0)',
       'Made by Strapi (6)',
       'Made by the community (2)',
       'Verified (6)',
