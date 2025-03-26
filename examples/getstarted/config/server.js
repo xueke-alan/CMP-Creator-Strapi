@@ -3,9 +3,11 @@
 const cronTasks = require('./src/cron-tasks');
 
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
+  host: env('HOST', '0.0.0.0'), // 必须绑定到 0.0.0.0
   port: env.int('PORT', 1337),
-  url: 'http://localhost:1337',
+  // url: 'http://localhost:1337', // 关键！此处必须为当前访问的地址或留空
+  url: 'http://localhost:1337', // 关键！此处必须为当前访问的地址或留空
+  // url: 'http://api.caihuasujiao.com', // 关键！此处必须为当前访问的地址或留空
   cron: {
     enabled: true,
     tasks: cronTasks,

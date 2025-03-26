@@ -36,7 +36,7 @@
     "build:size": "cd examples/getstarted && yarn build",
     "build:ts": "nx run-many --target=build:ts --nx-ignore-cycles",
     "build:watch": "nx watch --all --nx-ignore-cycles -- nx run \\$NX_PROJECT_NAME:build --nx-ignore-cycles",
-    "docker-build:prod": "npm run build && cd examples/getstarted && npm run build && npm run docker:prod",
+    "docker-build:prod": "npm run build && cd examples/getstarted && npm run build && npm run docker-build  && npm run docker-save",
     "clean": "nx run-many --target=clean --nx-ignore-cycles",
     "commit": "commit",
     "doc:api": "node scripts/open-api/serve.js",
