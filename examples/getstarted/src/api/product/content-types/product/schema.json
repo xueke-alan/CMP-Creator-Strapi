@@ -13,16 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "product_name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "company": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "brand": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "origin": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "plastictype": {
       "type": "relation",
@@ -30,48 +34,60 @@
       "target": "api::plasticinfo.plasticinfo"
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "pluginOptions": {}
     },
     "minimum_order": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "inventory": {
-      "type": "decimal"
+      "type": "decimal",
+      "pluginOptions": {}
     },
     "code": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "specification": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "is_imported": {
-      "type": "boolean"
+      "type": "boolean",
+      "pluginOptions": {}
     },
     "supplier": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "other_info": {
       "displayName": "key_value",
       "type": "component",
       "repeatable": true,
-      "component": "key-value.key-value"
+      "component": "key-value.key-value",
+      "pluginOptions": {}
     },
     "media_product": {
       "displayName": "introduce_pics",
       "type": "component",
       "repeatable": false,
-      "component": "medie-item.introduce-pics"
+      "component": "medie-item.introduce-pics",
+      "pluginOptions": {}
     },
     "shipping_address": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "media_description": {
       "type": "component",
       "repeatable": false,
-      "component": "medie-item.introduce-pics"
+      "component": "medie-item.introduce-pics",
+      "pluginOptions": {}
     }
   }
 }

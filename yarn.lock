@@ -9315,7 +9315,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions":
+"@strapi/plugin-users-permissions@npm:5.8.0, @strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions"
   dependencies:
@@ -9814,6 +9814,20 @@ __metadata:
     zod: "npm:^3.22.4"
   languageName: unknown
   linkType: soft
+
+"@strapi/utils@npm:^4.12.4":
+  version: 4.25.22
+  resolution: "@strapi/utils@npm:4.25.22"
+  dependencies:
+    "@sindresorhus/slugify": "npm:1.1.0"
+    date-fns: "npm:2.30.0"
+    http-errors: "npm:1.8.1"
+    lodash: "npm:4.17.21"
+    p-map: "npm:4.0.0"
+    yup: "npm:0.32.9"
+  checksum: 10c0/de42793f72b257cc8d6f8d2c23916e95dd73ee85b1d45093d0dc7bee46b8c12dd02825e6563c19368f4185677927c6a18b0754a1f78387fca8053ee6df5cc327
+  languageName: node
+  linkType: hard
 
 "@swc-node/core@npm:^1.13.1":
   version: 1.13.3
@@ -12428,6 +12442,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv-formats@npm:^1.5.1":
+  version: 1.6.1
+  resolution: "ajv-formats@npm:1.6.1"
+  dependencies:
+    ajv: "npm:^7.0.0"
+  peerDependencies:
+    ajv: ^7.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10c0/6abae18cc287f479d86d0f23a7b9bcac87b182252f03bd5f4bfa17e5620bc6727390589463343dc384f09d9dc371951c10be7b0a60c0e4ce070e67a619f237ba
+  languageName: node
+  linkType: hard
+
 "ajv-formats@npm:^2.1.1":
   version: 2.1.1
   resolution: "ajv-formats@npm:2.1.1"
@@ -12497,6 +12525,18 @@ __metadata:
     json-schema-traverse: "npm:^0.4.1"
     uri-js: "npm:^4.2.2"
   checksum: 10c0/41e23642cbe545889245b9d2a45854ebba51cda6c778ebced9649420d9205f2efb39cb43dbc41e358409223b1ea43303ae4839db682c848b891e4811da1a5a71
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^7.0.0, ajv@npm:^7.0.3":
+  version: 7.2.4
+  resolution: "ajv@npm:7.2.4"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.1"
+    json-schema-traverse: "npm:^1.0.0"
+    require-from-string: "npm:^2.0.2"
+    uri-js: "npm:^4.2.2"
+  checksum: 10c0/420b72d7f6af89c7e63e00856b894e16a8a2ea107b2b2a76ff36d8dd05f6d708ab120a8c7cc627983ad1f75c6990363eda7c68f45943635f084de62353ca1c56
   languageName: node
   linkType: hard
 
@@ -13031,6 +13071,13 @@ __metadata:
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
   checksum: 10c0/d73e2ddf20c4eb9337e1b3df1a0f6159481050a5de457c55b14ea2e5cb6d90bb69e004c9af54737a5ee0917fcf2c9e25de67777bbe58261847846066ba75bc9d
+  languageName: node
+  linkType: hard
+
+"atomically@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "atomically@npm:1.7.0"
+  checksum: 10c0/31f5efd5d69474681268557af4024f9e10223bb6b39fdedb5f2e19405186c4b76284fac9f6c43c9af75013cad6437e93b7168268f5ddb7aaf1cfc5fdb415f227
   languageName: node
   linkType: hard
 
@@ -14652,6 +14699,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conf@npm:^9.0.0":
+  version: 9.0.2
+  resolution: "conf@npm:9.0.2"
+  dependencies:
+    ajv: "npm:^7.0.3"
+    ajv-formats: "npm:^1.5.1"
+    atomically: "npm:^1.7.0"
+    debounce-fn: "npm:^4.0.0"
+    dot-prop: "npm:^6.0.1"
+    env-paths: "npm:^2.2.0"
+    json-schema-typed: "npm:^7.0.3"
+    make-dir: "npm:^3.1.0"
+    onetime: "npm:^5.1.2"
+    pkg-up: "npm:^3.1.0"
+    semver: "npm:^7.3.4"
+  checksum: 10c0/49291a4cfb8c0cbfcedc7a8003167c099fc84df76e6b25f51d685219cfa6769bde6e3eca752e83a73ce42eafc30c9069ca7df0b83bc70a87978179b511c45219
+  languageName: node
+  linkType: hard
+
 "confbox@npm:^0.1.8":
   version: 0.1.8
   resolution: "confbox@npm:0.1.8"
@@ -14985,6 +15051,18 @@ __metadata:
     object-assign: "npm:^4"
     vary: "npm:^1"
   checksum: 10c0/373702b7999409922da80de4a61938aabba6929aea5b6fd9096fefb9e8342f626c0ebd7507b0e8b0b311380744cc985f27edebc0a26e0ddb784b54e1085de761
+  languageName: node
+  linkType: hard
+
+"cos-nodejs-sdk-v5@npm:^2.12.4":
+  version: 2.14.7
+  resolution: "cos-nodejs-sdk-v5@npm:2.14.7"
+  dependencies:
+    conf: "npm:^9.0.0"
+    fast-xml-parser: "npm:4.2.5"
+    mime-types: "npm:^2.1.24"
+    request: "npm:^2.88.2"
+  checksum: 10c0/b2956746c7aacf967c619395c6c8acb004c46b2bda1595bbf7aef2b2b0edb828f5915e5365017ea7295ab225ef85faf20ee21f1e3f207fe99cf9456116cc24db
   languageName: node
   linkType: hard
 
@@ -15447,6 +15525,15 @@ __metadata:
   version: 1.0.2
   resolution: "de-indent@npm:1.0.2"
   checksum: 10c0/7058ce58abd6dfc123dd204e36be3797abd419b59482a634605420f47ae97639d0c183ec5d1b904f308a01033f473673897afc2bd59bc620ebf1658763ef4291
+  languageName: node
+  linkType: hard
+
+"debounce-fn@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "debounce-fn@npm:4.0.0"
+  dependencies:
+    mimic-fn: "npm:^3.0.0"
+  checksum: 10c0/bcbd8eb253bdb6ee2f32759c95973c62bc479e74efbe1a44e17acfb0ea7d4bcbe615bf7e34aab80247ac08669c1ab72f7da0f384ceb7f15c18333d31d9030384
   languageName: node
   linkType: hard
 
@@ -16040,6 +16127,15 @@ __metadata:
   dependencies:
     is-obj: "npm:^2.0.0"
   checksum: 10c0/93f0d343ef87fe8869320e62f2459f7e70f49c6098d948cc47e060f4a3f827d0ad61e83cb82f2bd90cd5b9571b8d334289978a43c0f98fea4f0e99ee8faa0599
+  languageName: node
+  linkType: hard
+
+"dot-prop@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "dot-prop@npm:6.0.1"
+  dependencies:
+    is-obj: "npm:^2.0.0"
+  checksum: 10c0/30e51ec6408978a6951b21e7bc4938aad01a86f2fdf779efe52330205c6bb8a8ea12f35925c2029d6dc9d1df22f916f32f828ce1e9b259b1371c580541c22b5a
   languageName: node
   linkType: hard
 
@@ -18779,12 +18875,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "getstarted@workspace:examples/getstarted"
   dependencies:
+    "@strapi/plugin-users-permissions": "npm:5.8.0"
     "@strapi/strapi": "npm:5.8.0"
     better-sqlite3: "npm:11.3.0"
     mysql2: "npm:3.9.8"
     react: "npm:18.3.1"
     react-dom: "npm:^18.0.0"
     react-router-dom: "npm:^6.0.0"
+    strapi-provider-upload-tencent-cloud-storage: "npm:1.1.5"
     styled-components: "npm:^6.0.0"
   languageName: unknown
   linkType: soft
@@ -19660,6 +19758,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"http-errors@npm:1.8.1, http-errors@npm:^1.6.3, http-errors@npm:^1.7.3, http-errors@npm:^1.8.1, http-errors@npm:~1.8.0":
+  version: 1.8.1
+  resolution: "http-errors@npm:1.8.1"
+  dependencies:
+    depd: "npm:~1.1.2"
+    inherits: "npm:2.0.4"
+    setprototypeof: "npm:1.2.0"
+    statuses: "npm:>= 1.5.0 < 2"
+    toidentifier: "npm:1.0.1"
+  checksum: 10c0/f01aeecd76260a6fe7f08e192fcbe9b2f39ed20fc717b852669a69930167053b01790998275c6297d44f435cf0e30edd50c05223d1bec9bc484e6cf35b2d6f43
+  languageName: node
+  linkType: hard
+
 "http-errors@npm:2.0.0, http-errors@npm:^2.0.0":
   version: 2.0.0
   resolution: "http-errors@npm:2.0.0"
@@ -19670,19 +19781,6 @@ __metadata:
     statuses: "npm:2.0.1"
     toidentifier: "npm:1.0.1"
   checksum: 10c0/fc6f2715fe188d091274b5ffc8b3657bd85c63e969daa68ccb77afb05b071a4b62841acb7a21e417b5539014dff2ebf9550f0b14a9ff126f2734a7c1387f8e19
-  languageName: node
-  linkType: hard
-
-"http-errors@npm:^1.6.3, http-errors@npm:^1.7.3, http-errors@npm:^1.8.1, http-errors@npm:~1.8.0":
-  version: 1.8.1
-  resolution: "http-errors@npm:1.8.1"
-  dependencies:
-    depd: "npm:~1.1.2"
-    inherits: "npm:2.0.4"
-    setprototypeof: "npm:1.2.0"
-    statuses: "npm:>= 1.5.0 < 2"
-    toidentifier: "npm:1.0.1"
-  checksum: 10c0/f01aeecd76260a6fe7f08e192fcbe9b2f39ed20fc717b852669a69930167053b01790998275c6297d44f435cf0e30edd50c05223d1bec9bc484e6cf35b2d6f43
   languageName: node
   linkType: hard
 
@@ -21800,6 +21898,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-schema-typed@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "json-schema-typed@npm:7.0.3"
+  checksum: 10c0/b4a6d984dd91f9aba72df8768c5ced99e789b8e17b55ee24afb3a687ce55b70a7b3f4360cac67939e1ff98e136ca26f3aa530635c13ef371ae5edc48b69a65f6
+  languageName: node
+  linkType: hard
+
 "json-schema@npm:0.4.0":
   version: 0.4.0
   resolution: "json-schema@npm:0.4.0"
@@ -23038,7 +23143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:^3.0.0":
+"make-dir@npm:^3.0.0, make-dir@npm:^3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
   dependencies:
@@ -23413,7 +23518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:2.1.35, mime-types@npm:^2.1.12, mime-types@npm:^2.1.18, mime-types@npm:^2.1.27, mime-types@npm:^2.1.28, mime-types@npm:^2.1.31, mime-types@npm:~2.1.19, mime-types@npm:~2.1.24, mime-types@npm:~2.1.34":
+"mime-types@npm:2.1.35, mime-types@npm:^2.1.12, mime-types@npm:^2.1.18, mime-types@npm:^2.1.24, mime-types@npm:^2.1.27, mime-types@npm:^2.1.28, mime-types@npm:^2.1.31, mime-types@npm:~2.1.19, mime-types@npm:~2.1.24, mime-types@npm:~2.1.34":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:
@@ -23444,6 +23549,13 @@ __metadata:
   version: 2.1.0
   resolution: "mimic-fn@npm:2.1.0"
   checksum: 10c0/b26f5479d7ec6cc2bce275a08f146cf78f5e7b661b18114e2506dd91ec7ec47e7a25bf4360e5438094db0560bcc868079fb3b1fb3892b833c1ecbf63f80c95a4
+  languageName: node
+  linkType: hard
+
+"mimic-fn@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "mimic-fn@npm:3.1.0"
+  checksum: 10c0/a07cdd8ed6490c2dff5b11f889b245d9556b80f5a653a552a651d17cff5a2d156e632d235106c2369f00cccef4071704589574cf3601bc1b1400a1f620dff067
   languageName: node
   linkType: hard
 
@@ -25850,7 +25962,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-up@npm:3.1.0":
+"pkg-up@npm:3.1.0, pkg-up@npm:^3.1.0":
   version: 3.1.0
   resolution: "pkg-up@npm:3.1.0"
   dependencies:
@@ -27224,7 +27336,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"request@npm:2.88.2":
+"request@npm:2.88.2, request@npm:^2.88.2":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -28802,6 +28914,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"strapi-provider-upload-tencent-cloud-storage@npm:1.1.5":
+  version: 1.1.5
+  resolution: "strapi-provider-upload-tencent-cloud-storage@npm:1.1.5"
+  dependencies:
+    "@strapi/utils": "npm:^4.12.4"
+    cos-nodejs-sdk-v5: "npm:^2.12.4"
+  peerDependencies:
+    "@strapi/strapi": ">=4.0.0"
+  checksum: 10c0/5192f409f3ca07eec29891286a748029fb27108f02c294b6d8a35e2234f67542df0af6ac7e8519a5d4d6a9f91142236fa0fdfcba79b158ac090099f6bce6e58e
+  languageName: node
+  linkType: hard
+
 "strapi@workspace:.":
   version: 0.0.0-use.local
   resolution: "strapi@workspace:."
@@ -28873,6 +28997,7 @@ __metadata:
     qs: "npm:6.11.1"
     rimraf: "npm:5.0.5"
     semver: "npm:7.5.4"
+    strapi-provider-upload-tencent-cloud-storage: "npm:1.1.5"
     stream-chain: "npm:2.2.5"
     stream-json: "npm:1.8.0"
     supertest: "npm:6.3.3"

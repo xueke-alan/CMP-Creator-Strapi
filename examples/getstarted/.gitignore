@@ -115,3 +115,9 @@ documentation
 .strapi-updater.json
 types/generated
 .strapi
+
+############################
+# Docker
+############################
+
+docker-compose.yml

@@ -1,27 +1,29 @@
 {
   "name": "getstarted",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "A Strapi application.",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "build": "strapi build",
+    "build": "strapi build && del /f /q *.docker.tar",
     "build:ce": "STRAPI_DISABLE_EE=true strapi build",
     "develop": "strapi develop",
     "develop:pro": "NODE_ENV=production strapi develop",
     "develop:ce": "STRAPI_DISABLE_EE=true strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
-    "docker-build": "docker build -t strapiapp:prod .",
-    "docker-save": "docker save -o cms.tar strapiapp"
+    "docker-build": "docker build -t strapiapp:%npm_package_version% .",
+    "docker-save": "docker save -o cms-%npm_package_version%.docker.tar strapiapp"
   },
   "dependencies": {
+    "@strapi/plugin-users-permissions": "5.8.0",
     "@strapi/strapi": "5.8.0",
     "better-sqlite3": "11.3.0",
     "mysql2": "3.9.8",
     "react": "18.3.1",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-provider-upload-tencent-cloud-storage": "1.1.5",
     "styled-components": "^6.0.0"
   },
   "engines": {

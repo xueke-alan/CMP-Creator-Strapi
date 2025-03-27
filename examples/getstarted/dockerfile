@@ -8,12 +8,14 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
+
 # 设置工作目录
 WORKDIR /opt/app
 
 # 复制依赖文件
 COPY ./package.json ./
-RUN npm install --production
+COPY .env* .
+RUN npm install --omit=dev
 
 # 生产镜像阶段
 FROM node:18-alpine
@@ -25,12 +27,13 @@ RUN rm -rf /var/cache/apk/*
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
+
 # 设置工作目录
 WORKDIR /opt/app
 
 # 复制依赖
 COPY --from=base /opt/app/node_modules ./node_modules
-ENV PATH /opt/app/node_modules/.bin:$PATH
+ENV PATH=/opt/app/node_modules/.bin:$PATH
 
 # 复制现有的 build 文件夹、config 文件夹和 package.json
 COPY ./build ./build

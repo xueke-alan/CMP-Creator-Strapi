@@ -1,57 +1,52 @@
-const sqlite = {
-  client: 'sqlite',
-  connection: {
-    filename: '.tmp/data.db',
+const dbConfig = {
+  sqlite: {
+    client: 'sqlite',
+    connection: {
+      filename: '.tmp/data.db',
+    },
+    useNullAsDefault: true,
   },
-  useNullAsDefault: true,
-};
-
-const postgres = {
-  client: 'postgres',
-  connection: {
-    database: 'strapi',
-    user: 'strapi',
-    password: 'strapi',
-    port: 5432,
-    host: 'localhost',
+  postgres: {
+    client: 'postgres',
+    connection: {
+      database: process.env.DATABASE_NAME || 'strapi',
+      user: process.env.DATABASE_USERNAME || 'strapi',
+      password: process.env.DATABASE_PASSWORD || 'strapi',
+      port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
+      host: process.env.DATABASE_HOST || 'localhost',
+    },
   },
-};
-
-const mysql = {
-  client: 'mysql',
-  connection: {
-    database: 'homepage',
-    user: 'admin',
-    password: 'Xk990704',
-    port: 3306,
-    host: '122.152.236.195',
+  mysql: {
+    client: 'mysql',
+    connection: {
+      database: process.env.DATABASE_NAME || 'strapi',
+      user: process.env.DATABASE_USERNAME || 'strapi',
+      password: process.env.DATABASE_PASSWORD || 'strapi',
+      port: parseInt(process.env.DATABASE_PORT, 10) || 3306,
+      host: process.env.DATABASE_HOST || 'localhost',
+    },
+    settings: {
+      forceMigration: false, // 确保未启用
+    },
   },
-};
-
-const mariadb = {
-  client: 'mysql',
-  connection: {
-    database: 'strapi',
-    user: 'strapi',
-    password: 'strapi',
-    port: 3307,
-    host: 'localhost',
+  mariadb: {
+    client: 'mysql',
+    connection: {
+      database: process.env.DATABASE_NAME || 'strapi',
+      user: process.env.DATABASE_USERNAME || 'strapi',
+      password: process.env.DATABASE_PASSWORD || 'strapi',
+      port: parseInt(process.env.DATABASE_PORT, 10) || 3307,
+      host: process.env.DATABASE_HOST || 'localhost',
+    },
   },
-};
-
-const db = {
-  mysql,
-  sqlite,
-  postgres,
-  mariadb,
-};
+}
 
 module.exports = {
-  connection: process.env.DB ? db[process.env.DB] || db.sqlite : db.sqlite,
-
-
-
-
-
-
+  connection: process.env.DB ? dbConfig[process.env.DB] || dbConfig.sqlite : dbConfig.sqlite,
+  useNullAsDefault: true,
+  options: {
+    migration: {
+      strategy: 'safe', // 使用 safe 避免清空表数据
+    },
+  },
 };
