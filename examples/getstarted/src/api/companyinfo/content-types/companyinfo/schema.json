@@ -56,6 +56,9 @@
       "type": "component",
       "repeatable": true,
       "component": "media-url.media-url"
+    },
+    "key_worlds": {
+      "type": "text"
     }
   }
 }

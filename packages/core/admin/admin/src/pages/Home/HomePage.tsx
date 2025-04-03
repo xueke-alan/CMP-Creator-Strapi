@@ -38,6 +38,7 @@ const HomePageCE = () => {
       <Layouts.Content>
         <Flex direction="column" alignItems="stretch" gap={8} paddingBottom={10}>
           <GuidedTour />
+          <iframe src="https://maddening-sloop-dc2.notion.site/ebd/c1f8076cd20c459c9ce386c64e2563cc" width="100%" height="800" frameborder="0" allowfullscreen />
           <Grid.Root gap={5}>
             <Grid.Item col={6} s={12}>
               <LastEditedWidget />

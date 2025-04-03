@@ -26,6 +26,7 @@ module.exports = [
             "market-assets.strapi.io",
             "caihuasujiao-1347960681.cos.ap-guangzhou.myqcloud.com",
           ],
+          'frame-src': ["'self'", 'https://*.notion.site'],
           upgradeInsecureRequests: null,
         },
       },

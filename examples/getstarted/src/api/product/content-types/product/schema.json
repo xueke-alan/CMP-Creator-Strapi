@@ -88,6 +88,9 @@
       "repeatable": false,
       "component": "medie-item.introduce-pics",
       "pluginOptions": {}
+    },
+    "key_worlds": {
+      "type": "string"
     }
   }
 }
